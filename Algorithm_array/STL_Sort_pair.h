@@ -1,0 +1,12 @@
+#pragma once
+
+void main(void) {
+	vector<pair< string, pair<int, int> > > v;
+	v.push_back(pair< string, pair<int, int> >("ÇãÀç¿ø", 100, 19980223));
+	v.push_back(pair<int, string>(95, "³ªµ¿ºó"));
+	v.push_back(pair<int, string>(99, "Á¦½ÅÈñ"));
+
+	sort(v.begin(), v.end());
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i].fi << ' ';
+	}
