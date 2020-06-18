@@ -38,7 +38,7 @@ void postorder_haha(treePointer ptr_haha) {
 	}
 }
 
-int main(void) {
+int main_Travesal(void) {
 	node nodes[number + 1];
 	for (int i = 1; i <= number; i++) {
 		nodes[i].data = i;
@@ -53,6 +53,7 @@ int main(void) {
 			nodes[i / 2].rightChild = &nodes[i];
 		}
 	}
+	//printf("%d", nodes[1].leftChild->data);
 	//preorder_haha(&nodes[1]);
 	inorder_haha(&nodes[1]);
 	//postorder_haha(&nodes[1]);
