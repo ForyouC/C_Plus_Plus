@@ -105,6 +105,15 @@
     <ClCompile Include="Eratosthenes_Prime_number.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Dijkstra_Algorithm_Easy_way.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra_Good_way.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="STL_Sort_pair.h">

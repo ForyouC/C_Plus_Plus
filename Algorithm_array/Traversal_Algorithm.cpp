@@ -29,7 +29,7 @@ void inorder_haha(treePointer ptr_haha) {
 	}
 }
 
-// 중위 순회를 구현합니다.
+// 후위 순회를 구현합니다.
 void postorder_haha(treePointer ptr_haha) {
 	if (ptr_haha) {
 		postorder_haha(ptr_haha->leftChild);

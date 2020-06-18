@@ -153,6 +153,8 @@
     <ClCompile Include="breadth_first_search.cpp" />
     <ClCompile Include="Bubble_Sort.cpp" />
     <ClCompile Include="Depth_First_search.cpp" />
+    <ClCompile Include="Dijkstra_Algorithm_Easy_way.cpp" />
+    <ClCompile Include="Dijkstra_Good_way.cpp" />
     <ClCompile Include="Dynamic_Programming.cpp" />
     <ClCompile Include="Eratosthenes_Prime_number.cpp" />
     <ClCompile Include="Heap_Sort.cpp" />
@@ -164,6 +166,7 @@
     <ClCompile Include="Quick_Sort.cpp" />
     <ClCompile Include="Selection_Sort_array.cpp" />
     <ClCompile Include="Countiong_sort.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="STL_SORT.cpp" />
     <ClCompile Include="STL_Sort_pair.cpp" />
