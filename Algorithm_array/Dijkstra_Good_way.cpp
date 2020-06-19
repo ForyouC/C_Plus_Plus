@@ -10,6 +10,7 @@ int INF_Dij_g = 10000000;
 vector<pair<int, int> > a_Dij_g[7]; //  Cost information;
 int d_Dij_g[7]; //  most Shortest cost
 
+
 void dijkstra_g(int start) {
 	d_Dij_g[start] = 0;
 	priority_queue<pair<int, int> > pq; //This is heap structure.
@@ -17,7 +18,7 @@ void dijkstra_g(int start) {
 	// It will take care of in the nearest order.
 	while (!pq.empty()) {
 		int current = pq.top().first;
-		//printf("current = %d\n", current);
+		printf("current = %d\n", current);
 		// after converting numbers to negative ones, It will take care of in the shortest order.
 		int distance = pq.top().second;
 		//printf("distance = %d\n", distance);
@@ -33,6 +34,9 @@ void dijkstra_g(int start) {
 			//printf("nextDistance = %d\n", nextDistance);
 			//	Replace if cheaper than the existing minimum cost.
 			if (nextDistance < d_Dij_g[next]) {
+				//printf("next = %d\n", next);
+				//printf("nextDistance = %d\n", nextDistance);
+				//printf("d_Dij_g = %d\n", d_Dij_g[next]);
 				d_Dij_g[next] = nextDistance;
 				pq.push(make_pair(next, nextDistance));
 			}
@@ -40,11 +44,13 @@ void dijkstra_g(int start) {
 	}
 }
 
-int main(void) {
+int main_Dij_good(void) {
 	//  By default, if not connected, the cost is infinite.
 	for (int i = 1; i <= number_Dij_g; i++) {
 		d_Dij_g[i] = INF_Dij_g;
 	}
+
+
 
 	a_Dij_g[1].push_back(make_pair(2, 2));
 	a_Dij_g[1].push_back(make_pair(3, 5));
